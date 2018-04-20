@@ -1,5 +1,6 @@
 package Tests;
 
+import PageObjects.BasePageObject;
 import PageObjects.FindRestaurantsPage;
 import Utilities.DriverManage;
 import org.junit.Before;
@@ -25,7 +26,7 @@ public class FindRestaurantsPageTest extends DriverManage {
     public void searchValidInputs() {
         findRestaurantsPage.enterName("Fun Restaurant");
         findRestaurantsPage.enterAddress("MountainView123,5643");
-        findRestaurantsPage.findRestaurants();
+        BasePageObject searchResultsPage = findRestaurantsPage.findRestaurants();
         assertThat(10, is(equalTo(20)));
     }
 

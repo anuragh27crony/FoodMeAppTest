@@ -14,6 +14,7 @@ public class DriverManage {
     @BeforeClass
     public static void Setup(){
         System.out.println("Inside the Setup");
+        System.setProperty("webdriver.gecko.driver", "/home/user/bin");
         driver=new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
