@@ -26,8 +26,7 @@ public class FindRestaurantsPageTest extends DriverManage {
     public void searchValidInputs() {
         findRestaurantsPage.enterName("Fun Restaurant");
         findRestaurantsPage.enterAddress("MountainView123,5643");
-        BasePageObject searchResultsPage = findRestaurantsPage.findRestaurants();
+            BasePageObject searchResultsPage = findRestaurantsPage.findRestaurants();
         assertThat(10, is(equalTo(20)));
     }
-
 }
