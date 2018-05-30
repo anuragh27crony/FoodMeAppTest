@@ -1,9 +1,10 @@
 package PageObjects;
 
+import Utilities.SeleniumEventUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePageObject {
+public class BasePageObject extends SeleniumEventUtil {
 
     protected WebDriver driver;
 

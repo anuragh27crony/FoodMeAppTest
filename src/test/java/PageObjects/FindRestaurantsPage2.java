@@ -3,14 +3,15 @@ package PageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
-public class FindRestaurantsPage extends BasePageObject {
+public class FindRestaurantsPage2 extends BasePageObject {
 
-    public FindRestaurantsPage(WebDriver driver) {
+    public FindRestaurantsPage2(WebDriver driver) {
         super(driver);
     }
 
-    @FindBy(id="customerName")
+    @FindBy(how = How.ID, using="customerName")
     private WebElement customerName;
 
     @FindBy(id="address")

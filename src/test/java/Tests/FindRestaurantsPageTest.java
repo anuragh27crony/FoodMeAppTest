@@ -1,7 +1,7 @@
 package Tests;
 
 import PageObjects.BasePageObject;
-import PageObjects.FindRestaurantsPage;
+import PageObjects.FindRestaurantsPage2;
 import Utilities.DriverManage;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,13 +13,13 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 public class FindRestaurantsPageTest extends DriverManage {
 
-    private FindRestaurantsPage findRestaurantsPage;
+    private FindRestaurantsPage2 findRestaurantsPage;
 
     @Before
     public void navigateToFindRestaurantsPage() {
         System.out.println("Inside the navigateToFindRestaurantsPage");
         driver.get("http://localhost:3000");
-        findRestaurantsPage = new FindRestaurantsPage(driver);
+        findRestaurantsPage = new FindRestaurantsPage2(driver);
     }
 
     @Test
